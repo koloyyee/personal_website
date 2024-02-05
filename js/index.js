@@ -29,3 +29,8 @@ lightSwitch.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
   currentThemeSetting = newTheme;
 });
+
+
+const hello = () => { alert("Hello");}
+
+export {hello}

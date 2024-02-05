@@ -1,0 +1,23 @@
+- [ ]	Before beginning to build your website, please create a plan using wireframing and a site map. This will help you to organize your ideas and layout, and ensure that your website is easy to navigate.
+- [ ]	HTML should be organized from clear semantically identified elements (eg. nav, header, body, footer, etc.) 
+- [ ]	A minimum of four HTML pages and a single separate CSS file used by all of your assignment pages. 
+- [ ]	Quality of presentation.
+  - []	 The site must appear professional.
+- [ ]	Quality of content. 
+  - [ ]	The website should be designed to impress an employer
+- [ ]	Basic, rushed, bare bones, sloppy, and/or careless projects will suffer from point deductions
+- [ ]	All pages in the site must contain the same  footer, and navigation.
+- [ ]	CSS is used effectively to style all assignment pages consistently.
+- [ ]	All formatting must be done using an external style sheet (no internal CSS)
+- [ ]	You will need to follow proper folder structure and naming convention: web folder, filenames, etc.
+- [ ]	Your “home” page should be named “index.html”
+- [ ]	The navigation bar for all pages in the site must be include working links for all of the pages that have been created thus far.
+- [ ]	Your code should be structured perfectly and has great spacing and indentation.
+- [ ]	Your code should be commented in such a manner as Concise, meaningful, and well- formatted 
+- [ ]	The images are well chosen and sized appropriately.
+- [ ]	Image paths should be relative to your web folder.
+- [ ]	Responsive layout with both a mobile and desktop mode available.
+- [ ]	Don’t use table for layout, you should use CSS.
+- [ ]	Do not use any copyrighted content on your webpage.
+- [ ]	Follow the Web Content Accessibility Guidelines (WCAG) discussed during the lecture.
+- [ ]	Validate all the HTML and CSS pages. This will ensure that your website meets coding standards and is free of errors

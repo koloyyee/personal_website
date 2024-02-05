@@ -16,13 +16,15 @@ nav > ul {
 
 }
 
-nav > ul, li {
+nav > ul , li {
     list-style: none;
     /* padding: 0.5rem 1rem 0.3rem 1rem; */
     margin: 0;
 
 }
-
+h1 ~ p:first-of-type  {
+    color: red;
+}
 [data-theme-toggle]{
     position: fixed;
     right: 2rem;

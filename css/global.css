@@ -21,7 +21,6 @@
     --accent-pink-1:#e6b8ca;
     color-scheme: light dark;
     height: 100vh;
-
 }
 
 [data-theme="light"] {
@@ -33,6 +32,7 @@
     --color-bg: rgb(51,51,54);
     --color-fg: #fafafc;
   }
+
 /* light mode */
 @media (prefers-color-scheme: light) {
     /* Apply dark mode styles using the defined CSS variables */
@@ -54,17 +54,42 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Oswald',serif, sans-serif;
     font-weight: 700;
     font-stretch: expanded;
-   
 }
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: var(--color-fg);
+    color: var(--color-bg);
+    font-weight: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.8;
+}
+
+nav > ul , li {
+    list-style: none;
+    /* padding: 0.5rem 1rem 0.3rem 1rem; */
+    margin: 0;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-fg);
     margin:auto;
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
 a {
     text-decoration: none;
     color:inherit;
@@ -76,6 +101,10 @@ a {
 @media only screen and (min-width: 481px) and (max-width: 768px) {
 }
 
-@media only screen and (min-width: 769px) {
+@media (min-width: 769px) {
     /* CSS for desktops */
+    nav > ul {
+        bottom: 95vh;
+        top: 0;
+    }
 }

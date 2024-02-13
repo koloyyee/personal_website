@@ -1,3 +1,6 @@
+"use strict";
+
+const template = document.createElement("template");
 /**
  * @param { localStorageTheme: String | null, systemSettingDark: String} - localStorageTheme, systemSettingDark
  * @returns String - dark | light
@@ -30,7 +33,17 @@ lightSwitch.addEventListener("click", () => {
   currentThemeSetting = newTheme;
 });
 
+function highlightNav() {
+  const navItems = document.getElementsByClassName("nav_item");
+  Array.from(navItems).forEach((item) => {
+    const href = item.childNodes[1].getAttribute("href");
+    if ("/" + href === window.location.pathname) {
+      item.classList.add("active");
+    }
+  });
+  console.log(navItems)
+}
+highlightNav();
 
-const hello = () => { alert("Hello");}
-
-export {hello}
+const hello = () => console.log("hello");
+export { hello, highlightNav };

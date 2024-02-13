@@ -48,6 +48,9 @@
         background-color: var(--main-color);
         color: var(--main-bg)
     }
+    .active {
+        text-decoration: underline;
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,6 +80,17 @@ nav > ul , li {
     list-style: none;
     /* padding: 0.5rem 1rem 0.3rem 1rem; */
     margin: 0;
+    transition: ease-in-out 200ms;
+}
+
+li:hover{
+    font-weight: 500;
+    font-size: medium;
+    color: yellow;
+}
+
+.active {
+    text-decoration: underline 
 }
 
 body {

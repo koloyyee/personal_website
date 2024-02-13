@@ -10,7 +10,7 @@
 - [ ]	CSS is used effectively to style all assignment pages consistently.
 - [ ]	All formatting must be done using an external style sheet (no internal CSS)
 - [ ]	You will need to follow proper folder structure and naming convention: web folder, filenames, etc.
-- [ ]	Your “home” page should be named “index.html”
+- [x ]	Your “home” page should be named “index.html”
 - [ ]	The navigation bar for all pages in the site must be include working links for all of the pages that have been created thus far.
 - [ ]	Your code should be structured perfectly and has great spacing and indentation.
 - [ ]	Your code should be commented in such a manner as Concise, meaningful, and well- formatted 

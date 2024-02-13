@@ -9,17 +9,11 @@
     <meta name="author" content="Loy Yee Ko">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/global.css">
+    <script type="module" src="./js/components/header.js" defer></script>
     <script type="module" src="./js/index.js" defer></script>
 </head>
 <header>
-    <nav class="top_nav">
-        <ul>
-            <li> <a href="./index.html">home</a></li>
-            <li> <a href="./resume.html">resume </a></li>
-            <li> <a href="./projects.html">projects </a></li>
-            <li> <a href="./contact.html">contact</a></li>
-        </ul>
-    </nav>
+    <header-component></header-component>
 </header>
 
 <body>
@@ -27,21 +21,15 @@
     <!-- First Page, Landing page (index.html)
 The first page is the introduction page. It   must contain a title (containing your name), a picture of you (or any picture you like), A description of yourself in two sentences or less. Emphasize the most important word(s) by putting them in bold, it will include some information on yourself, your hobbies, and your activities, information about the college, and a link to your college.
 Note that you may only use the gif, jpeg and png image file formats in web pages. -->
-    <h1>Java, Typescript Full Stack Developer!</h1>
-    <h2>My name is Loyyee Ko or <span>David</span></h2>
     <main>
-        <div>
-            <article>
-                <div class="introduction">
-                    <h2>Who Am I </h2>
-                    <p>I am a Java, Typescript Developer</p>
-                    <p>I am Passionate about Data, Backend, Performance!</p>
-                    <p> I am Algonquin College Computer Programming Student</p>
-                </div>
-                <div>
-
-                </div>
-            </article>
+        <img class="profile_pic" src="./img/mugshot.png" width="20%" alt="loyyee ko's profile pic">
+        <div class="introduction">
+            <h1>Java, Typescript Full Stack Developer!</h1>
+            <h2>My name is Loyyee Ko or <span>David</span></h2>
+            <h2>Who Am I </h2>
+            <p>I am a Java, Typescript Developer</p>
+            <p>I am Passionate about Data, Backend, Performance!</p>
+            <p> I am Algonquin College Computer Programming Student</p>
         </div>
     </main>
 

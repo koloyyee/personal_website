@@ -18,7 +18,11 @@
 .profile_pic {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+   box-shadow: 3rem 1rem 3rem rgba(241, 232, 63, 0.5); /* Offset, blur, spread, color */
   border-radius: 10%;
+}
+
+.profile_pic:hover{
 }
 
 main {

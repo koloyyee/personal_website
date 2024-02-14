@@ -1,0 +1,18 @@
+#contacts {
+  margin-top: 5%;
+}
+#whoami{
+  font-size: larger;
+  display:grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+#contact {
+  grid-column-start: 4;
+  grid-column-end: 8;
+}
+#social{
+  grid-column-start: 10;
+  grid-column-end: 16;
+
+}

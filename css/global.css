@@ -119,10 +119,10 @@ a {
   }
 }
 /* light mode */
-@media (prefers-color-scheme: light) {
   /* Apply dark mode styles using the defined CSS variables */
+/* @media (prefers-color-scheme: light) {
   :root {
     background-color: var(--main-bg);
     color: var(--main-color);
   }
-}
+} */

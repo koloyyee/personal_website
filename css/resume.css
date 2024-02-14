@@ -1,7 +1,7 @@
 #header {
   text-align: left;
   font-size: x-large;
-  margin-top: 15%;
+  margin-top: 5%;
 }
 #resume{
   height: 100vh;
@@ -9,7 +9,7 @@
   grid-template-columns: repeat(16, 1fr);
   gap: 1rem;
 }
-#whoami {
+#skills_edu{
   font-size: larger;
   grid-column-start: 2;
   grid-column-end: 6;

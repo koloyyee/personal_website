@@ -1,5 +1,5 @@
 - [ ]	Before beginning to build your website, please create a plan using wireframing and a site map. This will help you to organize your ideas and layout, and ensure that your website is easy to navigate.
-- [ ]	HTML should be organized from clear semantically identified elements (eg. nav, header, body, footer, etc.) 
+- [x ]	HTML should be organized from clear semantically identified elements (eg. nav, header, body, footer, etc.) 
 - [ ]	A minimum of four HTML pages and a single separate CSS file used by all of your assignment pages. 
 - [ ]	Quality of presentation.
   - []	 The site must appear professional.

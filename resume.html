@@ -7,38 +7,101 @@
   <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet"  href="/css/global.css">
+  <link rel="stylesheet" href="/css/global.css">
+  <!-- web components -->
   <script type="module" src="./js/components/header.js" defer></script>
+  <script type="module" src="./js/components/light_switch.js" async></script>
+
   <script type="module" src="./js/resume.js" defer></script>
   <script type="module" src="./js/index.js" defer></script>
+  <title>Summary of My Life</title>
 </head>
-<header-component></header-component
+<header-component></header-component>
 <body>
-  Second Page(resume.html)
-  This page will include the following:
-  • Contact Information
+<div id="header">
+  <h1>whoami</h1>
+  <p>😁My name is Loy Yee Ko just call me <span style="color:deeppink">David</span>!</p>
 
-  o Your full name.
-  o Email address.
-  o Phone number (optional).
-  o LinkedIn profile (optional).
-  o Any other relevant contact details (GitHub, personal website, etc.).
+</div>
+<main id="resume">
+  <div id="whoami">
+    <div id="contact">
+      <h3>Contacts</h3>
+      <p>📨: <a href="mailto:ko000029@algonquinlive.com" target="_blank">ko000029@algonquinlive.com</a></p>
+      <p>📞: <a href="" target="_blank"> +1(437) 662 7621</a></p>
+      <p>📝: <a href="https://write.loyyee.co">Checkout My Blog!</a></p>
+    </div>
+    <div id="social">
+      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/li.svg" alt="linkedin">:
+        <a href="https://www.linkedin.com/in/ko-loy-yee" target="_blank">Connect with on LinkedIn</a></p>
+      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/gh.svg" alt="github">:<a
+          href="https://www.github.com/koloyyee" target="_blank">Checkout My Github</a></p>
+      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/x.svg"
+          alt="X and twitter">:<a href="https://www.twitter.com/koloyyee" target="_blank">Follow me on X!</a></p>
+    </div>
+    <hr>
+    <h3>Technical Skills</h3>
+    <p>☕Languages: Java, TypeScript/JavaScript, and SQL</p>
+    <p>🏦Databases:Postgres, MongoDB, Firebase</p>
+    <p>🧑‍💻Tech & Tools: Docker, Git, AWS, NodeJS</p>
+    <hr>
+    <h3>Education</h3>
+    <p>🏫Algonquin College, Ottawa, Canada</p>
+    <p>🧑‍🎓09/2023 - Expected 05/2023</p>
+    <p>✒️GPA: 3.95/4.0</p>
+  </div>
+  <article id="experiences">
+    <h2>TLDR</h2>
+    <p>I was a Head Chef, turned into a Full-Stack Software Developer.</p>
+    <p>I love building products that help people and I love data, backend development!</p>
+    <p>My goal is to become a data engineer</p>
+    <hr>
 
-  • Summary or Objective
-  A brief, one or two-sentence summary of your career objectives or what you're looking to achieve.
-  • Work Experience
-  List your work experiences in reverse chronological order (most recent first).
-  Include the job title, the company or organization's name, the location, and the dates of employment. Provide a brief
-  description of your responsibilities, accomplishments, and any relevant achievements for each role.
-  • Skills
-  Highlight your technical and soft skills relevant to your field.
-  • Education
-  List your educational background, starting with the most recent degree.
-  Include the degree earned, the institution's name, the location, and the graduation date. Optionally, you can mention
-  your GPA if it's impressive.
+    <h2>Work Experience</h2>
+    <h3 class="work_place_title"><span>Freelance Developer @ GreyTee Software</span><span>  Ottawa, Canada</span></h3>
+    <p>📅 10/2023 - Present </p>
+    <p>Job Description:</p>
+    <ul>
+      <li> </span> Design, build, and deployed a <strong>distributed synchronized timer</strong>
+        for a Cafe in Montreal.</li>
+      <li> </span> Managing the frontend state across multiple component across the app, while
+        connecting to websocket without memory leak.</li>
+      <li> </span> Used SvelteKit for the full stack development, Firebase for realtime database
+        for websocket and updates, styled with TailwindCSS.</li>
+    </ul>
+    <h3 class="work_place_title"><span>Frontend Developer @ <a href="https://www.snaildy.com" target="_blank">Snaildy Education</a></span><span>Hong Kong, Hong Kong</span></h3>
+    <h3></h3>
+    <p>📅 01/2023- 08/2023</p>
+    <ul>
+      <li> Parsing over 1400 lines of CSV into MongoDB database</li>
+      <li> Dashboard development for monitoring over 30 schools in <strong>TypeScript, Svelte, TailwindCss, MongoDB</strong></li>
+      <li> Managing attendance rate calculations in the controller, marketplace quotations with MongoDB
+        aggregate functions, and NodeJS <strong>AWS lambda, SQS, SNS services</strong>, etc.</li>
+      <li> Started as an independent developer, worked closely with outsourced developers and took the initiative to
+        refactor. </li>
+      <li> Collaborate with the UI/UX designer and deliver the features and components <strong>on schedule.</strong></li>
+      <li>Used Svelte, MongoDB, and deployed on AWS Lambda</li>
+    </ul>
+    • Summary or Objective
+    A brief, one or two-sentence summary of your career objectives or what you're looking to achieve.
+    • Work Experience
+    List your work experiences in reverse chronological order (most recent first).
+    Include the job title, the company or organization's name, the location, and the dates of employment. Provide a
+    brief
+    description of your responsibilities, accomplishments, and any relevant achievements for each role.
+    • Skills
+    Highlight your technical and soft skills relevant to your field.
+    • Education
+    List your educational background, starting with the most recent degree.
+    Include the degree earned, the institution's name, the location, and the graduation date. Optionally, you can
+    mention
+    your GPA if it's impressive.
+  </article>
+</main>
 </body>
+
 <footer>
-    <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
+  <light-switch-component></light-switch-component>
 </footer>
+
 </html>

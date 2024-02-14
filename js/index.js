@@ -1,6 +1,12 @@
 "use strict";
 
 const template = document.createElement("template");
+const htmlTag = document.querySelector("html");
+(function(){
+    // Then set the 'data-theme' attribute to whatever is in localstorage
+    htmlTag.setAttribute('data-theme', localStorage.getItem('theme'));    
+})();
+
 /**
  * @param { localStorageTheme: String | null, systemSettingDark: String} - localStorageTheme, systemSettingDark
  * @returns String - dark | light
@@ -41,7 +47,6 @@ function highlightNav() {
       item.classList.add("active");
     }
   });
-  console.log(navItems)
 }
 highlightNav();
 

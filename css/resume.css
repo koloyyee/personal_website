@@ -1,0 +1,48 @@
+#header {
+  text-align: left;
+  font-size: x-large;
+  margin-top: 15%;
+}
+#resume{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  gap: 1rem;
+}
+#whoami {
+  font-size: larger;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  align-self: start;
+  margin-left: 1rem;
+}
+
+#contact {
+  grid-column-start: 4;
+  grid-column-end: 8;
+}
+#social{
+  grid-column-start: 8;
+  grid-column-end: 11;
+
+}
+
+#experiences {
+  grid-column-start: 7;
+  grid-column-end: 16;
+
+}
+.work_place_title {
+  display:flex;
+  justify-content: space-between;
+}
+.work_place_title a {
+  color: #5394f0;
+}
+.work_place_title a:hover {
+  color: #186ee6;
+}
+#experiences > ul > li {
+  list-style-type:disc;
+  padding-block: 0.2rem;
+}

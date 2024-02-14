@@ -89,7 +89,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 a {
@@ -111,19 +110,19 @@ a {
   }
 }
 
-/* light mode */
-@media (prefers-color-scheme: light) {
-  /* Apply dark mode styles using the defined CSS variables */
-  :root {
-    background-color: var(--main-bg);
-    color: var(--main-color);
-  }
-}
 /* dark mode */
 @media (prefers-color-scheme: dark) {
   /* Apply dark mode styles using the defined CSS variables */
   :root {
     background-color: var(--main-color);
     color: var(--main-bg);
+  }
+}
+/* light mode */
+@media (prefers-color-scheme: light) {
+  /* Apply dark mode styles using the defined CSS variables */
+  :root {
+    background-color: var(--main-bg);
+    color: var(--main-color);
   }
 }

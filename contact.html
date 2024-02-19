@@ -10,34 +10,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/global.css">
   <!-- web components -->
-  <script  type="module" src="./js/components/header.js"  defer></script>
+  <script type="module" src="./js/components/header.js" defer></script>
   <script type="module" src="./js/components/light_switch.js" defer></script>
-  <script  type="module" src="./js/contact.js"  defer></script>
-  <script type="module" src="./js/index.js"  defer></script>
+<script src="https://smtpjs.com/v3/smtp.js" defer ></script>
+  <script type="module" src="./js/contact.js" defer></script>
+  <script type="module" src="./js/index.js" defer></script>
+
 </head>
 
 <header-component></header-component>
+
 <body>
-      <h1 id="contacts">Contacts</h1>
-  <main>
-  <div id="whoami">
-    <div id="contact">
-      <p>📨: <a href="mailto:ko000029@algonquinlive.com" target="_blank">ko000029@algonquinlive.com</a></p>
-      <p>📞: <a href="" target="_blank"> +1(437) 662 7621</a></p>
-      <p>📝: <a href="https://write.loyyee.co">Checkout My Blog!</a></p>
+  <h1 id="contacts_header">Contacts</h1>
+  <main id="contact_main">
+    <div id="whoami">
+      <div id="contact">
+        <p>📨: <a href="mailto:ko000029@algonquinlive.com" target="_blank">ko000029@algonquinlive.com</a></p>
+        <p>📞: <a href="" target="_blank"> +1(437) 662 7621</a></p>
+        <p>📝: <a href="https://write.loyyee.co">Checkout My Blog!</a></p>
+      </div>
+      <div id="social">
+        <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="3%" src="./img/li.svg" alt="linkedin">:
+          <a href="https://www.linkedin.com/in/ko-loy-yee" target="_blank">Connect with on LinkedIn</a>
+        </p>
+        <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="3%" src="./img/gh.svg" alt="github">:<a
+            href="https://www.github.com/koloyyee" target="_blank">Checkout My Github</a></p>
+        <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="3%" src="./img/x.svg"
+            alt="X and twitter">:<a href="https://www.twitter.com/koloyyee" target="_blank">Follow me on X!</a></p>
+      </div>
     </div>
-    <div id="social">
-      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/li.svg" alt="linkedin">:
-        <a href="https://www.linkedin.com/in/ko-loy-yee" target="_blank">Connect with on LinkedIn</a></p>
-      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/gh.svg" alt="github">:<a
-          href="https://www.github.com/koloyyee" target="_blank">Checkout My Github</a></p>
-      <p style="display:flex; align-items: center; gap: 0.3rem;"> <img width="7%" src="./img/x.svg"
-          alt="X and twitter">:<a href="https://www.twitter.com/koloyyee" target="_blank">Follow me on X!</a></p>
-    </div>
+    <form id="contact_form">
+      <label for="email">From:</label>
+      <input id="email" type="email" name="email" placeholder="Your Email" required>
+      <label for="name">By:</label>
+      <input id="name" type="text" name="name" placeholder="Your name" required>
+      <label for="body">Content:</label>
+      <textarea name="body" id="body" cols="50" rows="10" required placeholder="Your message"></textarea>
+      <button type="submit">Send!</button>
+    </form>
   </main>
 </body>
 <!-- <light_switch-component></light_switch-component> -->
-      <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
+<button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
 <footer>
 
 </footer>

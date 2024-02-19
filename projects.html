@@ -9,28 +9,42 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- web components -->
   <!-- <script  type="module" src="./js/components/light_switch.js" defer></script> -->
-  <script  type="module" src="./js/components/header.js"  defer></script>
-  
-  <script  type="module" src="./js/projects.js"  defer></script>
-  <script type="module" src="./js/index.js"  defer></script>
+  <script type="module" src="./js/components/header.js" defer></script>
+
+  <script type="module" src="./js/projects.js" defer></script>
+  <script type="module" src="./js/index.js" defer></script>
 </head>
 <header-component></header-component>
+
 <body>
-  Third page (Projects.html)
+
+  <div style="margin-top: 5rem; margin-left:auto; max-width:8rem;" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Third page (Projects.html)
   Showcase your notable projects, including personal and professional ones.
   For each project, include a title, a brief description, the date completed, technologies used, and screenshot or image
   related to the project. List at least four of your projects (in web programming or any other project).
   Organize the projects within a container. Each project should be represented by a <div> element containing the title,
     description, date, and an image.
     Implement JavaScript to allow users to move between projects. Add "Next" and "Previous" buttons that show or hide
-    project information one at a time, creating a simple slideshow for browsing through projects.
+    project information one at a time, creating a simple slideshow for browsing through projects. -->
 
 </body>
 <footer>
-      <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
-<!-- <light_switch-component></light_switch-component> -->
+  <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
+  <!-- <light_switch-component></light_switch-component> -->
 </footer>
 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script> -->
 </html>

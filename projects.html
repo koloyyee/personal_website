@@ -21,7 +21,7 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVW6ET6Y8E"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-WVW6ET6Y8E');
@@ -30,24 +30,42 @@
 
 <body>
 
-  <div style="margin-top: 5rem; margin-left:auto; max-width:8rem;" class="swiper mySwiper">
+  <div style="margin-top: 5rem; margin-left:auto; " class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">
+        <div class="project-card">
+          <h2>Java Mini HTTP Server</h2>
+          <p>I was always fascinated by how HTTP server works, and this a small project to let me how build one from scratch with Java</p>
+          <p>Build with: Core Java - Socket, BufferedReader, OutputStream </p>
+          <div class="project-links"><a href="https://github.com/koloyyee/java_http_server" target="_blank">GitHub Repo</a></div>
+          <a href="https://github.com/koloyyee/java_http_server" target="_blank"> <img src="./img/http-server.gif" alt="java http server demo"></a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-card">
+          <h2>Synchronized Timer!</h2>
+          <p> This is a paid project for a cafe in Montreal, distributed synchronized timer</p>
+          <p> I tackled the problem of websocket for real time distributed timer and avoid memory leak with frontend state management.</p>
+          <p>Build with: SvelteKit, TailwindCSS, Firebase</p>
+          <div class="project-links"><a href="https://sync-timer.loyyee.co" target="_blank">Live Demo</a> <a href="https://github.com/koloyyee/synced-timer" target="_blank">GitHub Repo</a></div>
+          <a href="https://synced-timer.loyyee.co" target="_blank"> <img src="./img/synced.gif" alt="computer number system"></a>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-card">
+          <h2>Computer Number System Converter</h2>
+          <p> To Recreate a step by step of radix conversion Binary, Decimal, Octal, and Hexadecimal</p>
+          <p>This project help me to learn about using both Object Oriented Programming and Functional Programming</p>
+          <p>Build with: SvelteKit, TailwindCSS</p>
+          <div class="project-links"><a href="https://cns.loyyee.co" target="_blank">Live Demo</a> <a href="https://github.com/koloyyee/computer-number-system" target="_blank">GitHub Repo</a></div>
+          <a href="https://cns.loyyee.co" target="_blank"> <img src="./img/cns.gif" alt="computer number system"></a>
+        </div>
+      </div>
     </div>
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
 
-  <!-- Third page (Projects.html)
-  Showcase your notable projects, including personal and professional ones.
-  For each project, include a title, a brief description, the date completed, technologies used, and screenshot or image
-  related to the project. List at least four of your projects (in web programming or any other project).
-  Organize the projects within a container. Each project should be represented by a <div> element containing the title,
-    description, date, and an image.
-    Implement JavaScript to allow users to move between projects. Add "Next" and "Previous" buttons that show or hide
-    project information one at a time, creating a simple slideshow for browsing through projects. -->
 
 </body>
 <footer>
@@ -55,5 +73,6 @@
   <!-- <light_switch-component></light_switch-component> -->
 </footer>
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script> -->
+
 </html>

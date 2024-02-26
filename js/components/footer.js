@@ -1,4 +1,3 @@
-
 class Footer extends HTMLElement {
   constructor() {
     super();
@@ -11,6 +10,7 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <footer>
+          // <light-switch-component></light-switch-component> 
             <ul>
                 <li class="footer_item"> <a href="https://www.github.com/koloyyee">
                 <svg></svg>
@@ -23,6 +23,6 @@ class Footer extends HTMLElement {
 }
 
 /*
- *JS DOM Global Function 
+ *JS DOM Global Function
  */
 customElements.define("footer-component", Footer);

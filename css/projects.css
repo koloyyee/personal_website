@@ -1,15 +1,9 @@
-.card_container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 5rem;
-}
-
 .swiper {
-  width: 100%;
-  height: 100%;
+  max-width: 50rem;
+  /* width: 100%; */
+  /* height: 100%; */
+  /* max-height: 30rem; */
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -17,43 +11,31 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height:100%;
 }
 
 .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
+  /* display: block; */
+  width: 80%;
+  height: 80%;
   object-fit: cover;
+  border-radius: 1rem;
 }
 
-/* .card {
+ .project-card {
   background-color: #fff;
-  padding: 20px;
+  /* padding: 20px; */
   border: 1px solid #ddd;
   border-radius: 5%;
-  box-shadow: 0rem 3rem 1rem rgba(241, 232, 63, 0.5); 
+  /* box-shadow: 0rem 3rem 1rem rgba(241, 232, 63, 0.5);  */
 }
 
-.carousel {
-  width: 300px; 
-  margin: 0 auto;
-}
-
-.carousel-inner {
-  overflow: hidden;
+.project-links {
   display: flex;
-  flex-direction: row;
-  transform: translateX(-100%); 
-  transition: transform 0.5s ease-in-out;
+  justify-content: space-evenly;
+  
 }
-
-.carousel-item {
-  width: 33.33%;
-  padding: 20px;
+.project-links > a:hover {
+  color: orange;
+  transition-duration: ease-in-out 200ms;
 }
-
-.carousel-nav {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-} */

@@ -2,9 +2,9 @@
 
 const template = document.createElement("template");
 const htmlTag = document.querySelector("html");
-(function(){
-    // Then set the 'data-theme' attribute to whatever is in localstorage
-    htmlTag.setAttribute('data-theme', localStorage.getItem('theme'));    
+(function () {
+  // Then set the 'data-theme' attribute to whatever is in localstorage
+  htmlTag.setAttribute("data-theme", localStorage.getItem("theme"));
 })();
 
 /**
@@ -21,24 +21,25 @@ function calculateSettingAsThemeString({
 /**
  * dark/light mode toggle
  */
-const lightSwitch = document.querySelector("[data-theme-toggle]");
-lightSwitch.addEventListener("click", () => {
-  const localStorageTheme = localStorage.getItem("theme");
-  const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-  let currentThemeSetting = calculateSettingAsThemeString({
-    localStorageTheme,
-    systemSettingDark,
+function themeToggle() {
+  const lightSwitch = document.querySelector("[data-theme-toggle]");
+  lightSwitch.addEventListener("click", () => {
+    const localStorageTheme = localStorage.getItem("theme");
+    const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+    let currentThemeSetting = calculateSettingAsThemeString({
+      localStorageTheme,
+      systemSettingDark,
+    });
+    const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+
+    const innerText = newTheme === "dark" ? "💡" : "🌞";
+    lightSwitch.innerText = innerText;
+
+    document.querySelector("html").setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    currentThemeSetting = newTheme;
   });
-  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
-
-  const innerText = newTheme === "dark" ? "💡" : "🌞";
-  lightSwitch.innerText = innerText;
-
-  document.querySelector("html").setAttribute("data-theme", newTheme);
-  localStorage.setItem("theme", newTheme);
-  currentThemeSetting = newTheme;
-});
-
+}
 function highlightNav() {
   const navItems = document.getElementsByClassName("nav_item");
   Array.from(navItems).forEach((item) => {
@@ -48,7 +49,9 @@ function highlightNav() {
     }
   });
 }
+
 highlightNav();
+// themeToggle();
 
 const hello = () => console.log("hello");
 export { hello, highlightNav };

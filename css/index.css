@@ -10,6 +10,14 @@
   font-size: 2rem;
 }
 
+  main {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
 .introduction:hover {
   /* content: url(../img/mugshot.png);
     display: relative; */
@@ -22,17 +30,36 @@
 .profile_pic {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-   box-shadow: 3rem 1rem 3rem rgba(241, 232, 63, 0.5); /* Offset, blur, spread, color */
+  box-shadow: 3rem 1rem 3rem rgba(241, 232, 63, 0.5); /* Offset, blur, spread, color */
   border-radius: 10%;
 }
 
-.profile_pic:hover{
+.profile_pic:hover {
 }
 
-main {
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+@media screen and (max-width: 768px) {
+  #index {
+    margin: 0;
+  }
+  .introduction {
+    margin: 0;
+    padding: 0;
+    order: 1;
+  }
+  .profile_pic {
+    width: 50%;
+    order: 2;
+  }
+  main {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    padding: 0 ;
+  }
 }

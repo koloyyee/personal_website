@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- web components -->
-  <script  type="module" src="./js/components/light_switch.js" defer></script>
+  <script type="module" src="./js/components/light_switch.js" defer></script>
   <script type="module" src="./js/components/header.js" defer></script>
 
   <script type="module" src="./js/projects.js" defer></script>
@@ -35,20 +35,37 @@
       <div class="swiper-slide">
         <div class="project-card">
           <h2>Java Mini HTTP Server</h2>
-          <p>I was always fascinated by how HTTP server works, and this a small project to let me how build one from scratch with Java</p>
-          <p>Build with: Core Java - Socket, BufferedReader, OutputStream </p>
-          <div class="project-links"><a href="https://github.com/koloyyee/java_http_server" target="_blank">GitHub Repo</a></div>
-          <a href="https://github.com/koloyyee/java_http_server" target="_blank"> <img src="./img/http-server.gif" alt="java http server demo"></a>
+          <p>I was always fascinated by how HTTP server works, and this a small project to let me how build one from
+            scratch with Java</p>
+          <ul class="skills">
+            <li class="skill-tag">Core Java</li>
+            <ul class="skills">
+              <li class="skill-tag">Socket</li>
+              <li class="skill-tag">BufferedReader</li>
+              <li class="skill-tag">OutputStream</li>
+            </ul>
+          </ul>
+          <div class="project-links"><a href="https://github.com/koloyyee/java_http_server" target="_blank" class="outer-link">GitHub
+              Repo</a></div>
+          <a href="https://github.com/koloyyee/java_http_server" target="_blank"> <img src="./img/http-server.gif"
+              alt="java http server demo"></a>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="project-card">
           <h2>Synchronized Timer!</h2>
           <p> This is a paid project for a cafe in Montreal, distributed synchronized timer</p>
-          <p> I tackled the problem of websocket for real time distributed timer and avoid memory leak with frontend state management.</p>
-          <p>Build with: SvelteKit, TailwindCSS, Firebase</p>
-          <div class="project-links"><a href="https://sync-timer.loyyee.co" target="_blank">Live Demo</a> <a href="https://github.com/koloyyee/synced-timer" target="_blank">GitHub Repo</a></div>
-          <a href="https://synced-timer.loyyee.co" target="_blank"> <img src="./img/synced.gif" alt="computer number system"></a>
+          <p> I tackled the problem of websocket for real time distributed timer and avoid memory leak with frontend
+            state management.</p>
+          <ul class="skills">
+            <li class="skill-tag">SvelteKit</li>
+            <li class="skill-tag">TailwindCSS</li>
+            <li class="skill-tag">Firebase</li>
+          </ul>
+          <div class="project-links"><a href="https://sync-timer.loyyee.co" target="_blank"  class="outer-link">Live Demo</a> <a
+              href="https://github.com/koloyyee/synced-timer" target="_blank" class="outer-link">GitHub Repo</a></div>
+          <a href="https://synced-timer.loyyee.co" target="_blank"> <img src="./img/synced.gif"
+              alt="computer number system"></a>
         </div>
       </div>
       <div class="swiper-slide">
@@ -56,19 +73,26 @@
           <h2>Computer Number System Converter</h2>
           <p> To Recreate a step by step of radix conversion Binary, Decimal, Octal, and Hexadecimal</p>
           <p>This project help me to learn about using both Object Oriented Programming and Functional Programming</p>
-          <p>Build with: SvelteKit, TailwindCSS</p>
-          <div class="project-links"><a href="https://cns.loyyee.co" target="_blank">Live Demo</a> <a href="https://github.com/koloyyee/computer-number-system" target="_blank">GitHub Repo</a></div>
+          <ul class="skills">
+            <li class="skill-tag">SvelteKit</li>
+            <li class="skill-tag">TailwindCSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/koloyyee/computer-number-system" target="_blank" class="outer-link">GitHub Repo</a></div>
           <a href="https://cns.loyyee.co" target="_blank"> <img src="./img/cns.gif" alt="computer number system"></a>
         </div>
       </div>
       <div class="swiper-slide">
         <div class="project-card">
-          <h2>Spring Boot Application</h2>
-          <p> To Recreate a step by step of radix conversion Binary, Decimal, Octal, and Hexadecimal</p>
-          <p>This project help me to learn about using both Object Oriented Programming and Functional Programming</p>
-          <p>Build with: SvelteKit, TailwindCSS</p>
-          <div class="project-links"><a href="https://cns.loyyee.co" target="_blank">Live Demo</a> <a href="https://github.com/koloyyee/computer-number-system" target="_blank">GitHub Repo</a></div>
-          <a href="https://cns.loyyee.co" target="_blank"> <img src="./img/cns.gif" alt="computer number system"></a>
+          <h2>Go Tic-Tac-Toe </h2>
+          <p> Classic console game made in Go!</p>
+          <p>Everything I'll need to learn about the basics of Go!</p>
+          <ul class="skills">
+            <li class="skill-tag">Go</li>
+          </ul>
+          <div class="project-links">
+             <a href="https://github.com/koloyyee/go_tic_tac_toe" target="_blank" class="outer-link">GitHub Repo</a></div>
+          <a href="https://github.com/koloyyee/go_tic_tac_toe" target="_blank"> <img src="" alt="MISSING IMAGE"></a>
         </div>
       </div>
     </div>
@@ -79,8 +103,8 @@
 
 </body>
 <footer>
-  <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button>
-  <light_switch-component></light_switch-component>
+  <!-- <button type="button" data-theme-toggle aria-label="Change to light theme">🌞</button> -->
+  <!-- <light_switch-component></light_switch-component> -->
 </footer>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" ></script> -->

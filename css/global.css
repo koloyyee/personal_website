@@ -72,7 +72,7 @@ li {
   transition: ease-in-out 200ms;
 }
 
-  li:hover {
+  .nav_item:hover {
     font-weight: 500;
     font-size: medium;
   }

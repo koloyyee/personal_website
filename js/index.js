@@ -51,7 +51,7 @@ function highlightNav() {
 }
 
 highlightNav();
-// themeToggle();
+themeToggle();
 
 const hello = () => console.log("hello");
 export { hello, highlightNav };

@@ -54,11 +54,14 @@
   justify-content: space-evenly;
   gap: 0.5rem;
 }
+
 .skill-tag {
+  font-size: 0.9rem;
   border-radius: 1rem;
   background-color: #f7f7f7;
   color:#3498db;
-  padding: 0.5rem;
+  padding: 0.3rem 1.8rem;
+  
 }
 @media (max-width: 768px) {
   .swiper {

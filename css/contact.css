@@ -16,6 +16,9 @@
   margin-bottom: 5rem;
 }
 
+.social-icons {
+  max-width: 1.3rem;
+}
 #contact_form {
   display: flex;
   flex-direction: column;

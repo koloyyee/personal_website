@@ -34,9 +34,12 @@
 .project-links {
   display: flex;
   justify-content: space-evenly;
-  transition-duration: ease-in-out 200ms;
 }
-.project-links > .outer-link:hover {
+.outer-link {
+  /* transition-duration: transform 300ms; */
+}
+.outer-link:hover {
+  /* transform: ease-in-out; */
   color:#fe72a8 ;
   box-shadow: 0.1rem 0.1rem 0.1rem #fe72a8; 
 }
